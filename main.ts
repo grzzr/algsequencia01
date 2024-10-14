@@ -1,11 +1,22 @@
+// Use as operações:
+// 
+// - esquerda
+// - direita
+// - subir
+// - descer
+// 
+// Elas estão no painel à esquerda, na seção 'Functions'
+// 
 function solução () {
-	
+    direita(personagem)
+    direita(personagem)
+    descer(personagem)
 }
 function tarefa () {
-    game.showLongText("Tarefa:", DialogLayout.Bottom)
+    game.showLongText("Tarefa: Levar o personagem até o baú.", DialogLayout.Bottom)
 }
 function esquerda (aSprite: Sprite) {
-    grid.move(aSprite, 1, 0)
+    grid.move(aSprite, -1, 0)
     pause(200)
 }
 function subir (aSprite: Sprite) {
@@ -13,7 +24,7 @@ function subir (aSprite: Sprite) {
     pause(200)
 }
 function direita (aSprite: Sprite) {
-    grid.move(aSprite, -1, 0)
+    grid.move(aSprite, 1, 0)
     pause(200)
 }
 function inicialização () {
